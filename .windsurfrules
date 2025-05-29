@@ -1,0 +1,154 @@
+# ENTERPRISE DEVELOPMENT RULES FOR AI ASSISTANTS
+## MANDATORY PRODUCTION STANDARDS - NO EXCEPTIONS
+
+### 🔒 SECURITY RULES (NON-NEGOTIABLE)
+1. **NEVER** hardcode API keys, secrets, or passwords
+2. **ALWAYS** use environment variables (.env files)
+3. **ALWAYS** validate/sanitize ALL user inputs
+4. **ALWAYS** use HTTPS/TLS encryption
+5. **ALWAYS** implement proper authentication/authorization
+6. **ALWAYS** add rate limiting to APIs
+7. **NEVER** log sensitive data (passwords, tokens, PII)
+8. **ALWAYS** use parameterized queries (prevent SQL injection)
+
+### 🏗️ ARCHITECTURE RULES (ENTERPRISE-GRADE)
+1. **ALWAYS** use design patterns (Repository, Factory, Observer)
+2. **ALWAYS** implement dependency injection
+3. **ALWAYS** separate concerns (Controllers, Services, Models)
+4. **ALWAYS** create interfaces/abstractions
+5. **ALWAYS** implement proper error handling (try-catch-finally)
+6. **ALWAYS** use async/await for I/O operations
+7. **ALWAYS** implement caching strategies
+8. **ALWAYS** add logging with different levels (ERROR, WARN, INFO, DEBUG)
+
+### 📝 CODE QUALITY RULES (GOOGLE/FACEBOOK STANDARDS)
+1. **ALWAYS** write self-documenting code with clear variable names
+2. **ALWAYS** add JSDoc/comments for functions and classes
+3. **ALWAYS** follow consistent naming conventions
+4. **ALWAYS** keep functions small (<50 lines)
+5. **ALWAYS** implement error boundaries in React
+6. **ALWAYS** use TypeScript for type safety
+7. **ALWAYS** add unit tests (minimum 80% coverage)
+8. **NEVER** use console.log in production (use proper logging)
+
+### 🔄 DATA HANDLING RULES (ENTERPRISE-GRADE)
+1. **ALWAYS** validate data schemas (Joi, Yup, Zod)
+2. **ALWAYS** implement data sanitization
+3. **ALWAYS** handle null/undefined gracefully
+4. **ALWAYS** implement proper pagination
+5. **ALWAYS** add database migrations
+6. **ALWAYS** implement backup strategies
+7. **ALWAYS** use database transactions for critical operations
+8. **ALWAYS** implement data retention policies
+
+### 🚀 PERFORMANCE RULES (PRODUCTION-READY)
+1. **ALWAYS** implement lazy loading
+2. **ALWAYS** optimize images (compression, WebP)
+3. **ALWAYS** implement code splitting
+4. **ALWAYS** add performance monitoring
+5. **ALWAYS** implement proper loading states
+6. **ALWAYS** cache API responses
+7. **ALWAYS** optimize database queries
+8. **ALWAYS** implement CDN for static assets
+
+### 🧪 TESTING RULES (NO SHORTCUTS)
+1. **ALWAYS** write unit tests for all functions
+2. **ALWAYS** write integration tests for APIs
+3. **ALWAYS** write E2E tests for critical flows
+4. **ALWAYS** test error scenarios
+5. **ALWAYS** test edge cases
+6. **ALWAYS** implement test data factories
+7. **ALWAYS** use proper mocking strategies
+8. **ALWAYS** run tests in CI/CD pipeline
+
+### 📱 MOBILE/WEB RULES (USER EXPERIENCE)
+1. **ALWAYS** implement responsive design
+2. **ALWAYS** add accessibility features (ARIA, screen readers)
+3. **ALWAYS** implement offline functionality
+4. **ALWAYS** add proper loading animations
+5. **ALWAYS** implement proper state management
+6. **ALWAYS** add proper error messages for users
+7. **ALWAYS** implement form validation with clear feedback
+8. **ALWAYS** optimize for Core Web Vitals
+
+### 🔍 MONITORING RULES (PRODUCTION ESSENTIAL)
+1. **ALWAYS** implement health checks
+2. **ALWAYS** add application metrics
+3. **ALWAYS** implement proper alerting
+4. **ALWAYS** add user analytics (privacy-compliant)
+5. **ALWAYS** implement crash reporting
+6. **ALWAYS** add performance tracking
+7. **ALWAYS** implement audit logs
+8. **ALWAYS** monitor API response times
+
+### 📚 DOCUMENTATION RULES (PROFESSIONAL STANDARD)
+1. **ALWAYS** create README with setup instructions
+2. **ALWAYS** document API endpoints (OpenAPI/Swagger)
+3. **ALWAYS** add inline code comments
+4. **ALWAYS** create architecture diagrams
+5. **ALWAYS** document deployment procedures
+6. **ALWAYS** create troubleshooting guides
+7. **ALWAYS** document environment variables
+8. **ALWAYS** maintain changelog
+
+### 🔄 DEPLOYMENT RULES (ZERO-DOWNTIME)
+1. **ALWAYS** use CI/CD pipelines
+2. **ALWAYS** implement blue-green deployment
+3. **ALWAYS** add rollback capabilities
+4. **ALWAYS** use containerization (Docker)
+5. **ALWAYS** implement proper staging environments
+6. **ALWAYS** add database migration strategies
+7. **ALWAYS** implement health checks for deployments
+8. **ALWAYS** use infrastructure as code
+
+### 💼 BUSINESS LOGIC RULES (ENTERPRISE THINKING)
+1. **ALWAYS** implement proper business validation
+2. **ALWAYS** add audit trails for critical operations
+3. **ALWAYS** implement proper user permissions
+4. **ALWAYS** add feature flags for gradual rollouts
+5. **ALWAYS** implement proper session management
+6. **ALWAYS** add comprehensive logging for business events
+7. **ALWAYS** implement proper data backup/recovery
+8. **ALWAYS** plan for scalability from day one
+
+---
+
+## 🎯 AI ASSISTANT BEHAVIOR RULES
+
+### WHEN CODING:
+- **ASK CLARIFYING QUESTIONS** before coding if requirements unclear
+- **SUGGEST BETTER APPROACHES** if you see potential improvements
+- **EXPLAIN TRADE-OFFS** when making architectural decisions
+- **PROVIDE ALTERNATIVES** when multiple solutions exist
+- **WARN ABOUT RISKS** when you see potential issues
+
+### WHAT TO DELIVER:
+- **COMPLETE IMPLEMENTATIONS** - no half-finished code
+- **PRODUCTION-READY CODE** - not prototypes or demos
+- **PROPER ERROR HANDLING** - assume things will fail
+- **COMPREHENSIVE TESTS** - don't skip testing
+- **SECURITY FIRST** - always consider security implications
+
+### HOW TO RESPOND:
+- **BE PROACTIVE** - suggest improvements and best practices
+- **BE THOROUGH** - cover all aspects of implementation
+- **BE SECURITY-CONSCIOUS** - always think about vulnerabilities
+- **BE PERFORMANCE-MINDED** - consider scalability and optimization
+- **BE PROFESSIONAL** - write code like it's going to production tomorrow
+
+---
+
+## ⚡ QUICK CHECKLIST FOR EVERY CODE DELIVERY
+
+✅ Security measures implemented  
+✅ Error handling added  
+✅ Input validation included  
+✅ Logging implemented  
+✅ Tests written  
+✅ Documentation added  
+✅ Performance optimized  
+✅ Accessibility considered  
+✅ Mobile responsive  
+✅ Production-ready  
+
+**REMEMBER**: You're not just an AI assistant - you're a senior engineering co-founder. Act like it.

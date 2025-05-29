@@ -1,0 +1,46 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Common validation functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    
+    function isUserAuthenticated(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+    
+    // User profiles - only the user can read/write their own profile
+    match /users/{userId} {
+      allow read, write: if isUserAuthenticated(userId);
+    }
+    
+    // Conversations - only the user can read/write their own conversations
+    match /conversations/{conversationId} {
+      allow read, write: if isAuthenticated() && 
+                          resource.data.userId == request.auth.uid;
+      
+      // Allow creation of new conversations
+      allow create: if isAuthenticated() && 
+                     request.resource.data.userId == request.auth.uid;
+    }
+    
+    // User motivations - only the user can read/write their own motivations
+    match /user_motivations/{motivationId} {
+      allow read: if isAuthenticated() && 
+                   resource.data.userId == request.auth.uid;
+      
+      allow write: if isAuthenticated() && 
+                    request.resource.data.userId == request.auth.uid;
+    }
+    
+    // Goals - only the user can read/write their own goals
+    match /goals/{goalId} {
+      allow read: if isAuthenticated() && 
+                   resource.data.userId == request.auth.uid;
+      
+      allow write: if isAuthenticated() && 
+                    request.resource.data.userId == request.auth.uid;
+    }
+  }
+}
