@@ -3,6 +3,9 @@
  * Ensures proper functionality across Android and iOS platforms
  */
 
+// Import crypto polyfill first to ensure UUID generation works
+import 'react-native-get-random-values';
+
 // URL polyfill needed for Firebase and other network operations
 import 'react-native-url-polyfill/auto';
 
